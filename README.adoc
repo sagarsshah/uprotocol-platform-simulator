@@ -3,9 +3,7 @@
 
 == Introduction
 
-The up-Simulator, a web-based tool, is meticulously crafted to simplify the development of uProtocol services and applications on PCs. Through its intuitive user-friendly interface, it empowers users with features like Publish-Subscribe, RPC invocation, and the simulation of COVESA Vehicle Services. With an emphasis on an intuitive graphical user interface (GUI), users can effortlessly navigate through the development and testing phases of Ultifi Apps, ensuring a seamless experience from initiation to completion.
-
-== Architecture Overview
+The up-Simulator is a user-friendly web tool designed to make developing uProtocol services and Apps on PCs easy. Its intuitive interface empowers users with features such as Publish-Subscribe, RPC invocation, and the simulation of COVESA Vehicle Services. With a focus on a user-friendly graphical interface (GUI), users can easily navigate through the development and testing phases of uProtocol Apps, ensuring a smooth experience from start to finish.== Architecture Overview
 
 up-Simulator:
 
