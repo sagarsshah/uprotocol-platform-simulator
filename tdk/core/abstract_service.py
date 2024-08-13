@@ -120,9 +120,10 @@ class BaseService(object):
                     for attr1 in dir(getattr(self, attr)):
                         if attr1 == 'handle_request':
                             func = getattr(self, attr)
+                            if attr == '__class__':
+                                continue
                             method_uri_str = protobuf_autoloader.get_rpc_uri_by_name(self.service_id, attr)
                             method_uri = protobuf_autoloader.get_uuri_from_name(method_uri_str)
-
                             status = await self.tdk_apis.register_request_handler(method_uri, func)
                             service_util.print_register_rpc_status(method_uri_str, status.code, status.message)
 

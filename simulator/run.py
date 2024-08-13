@@ -19,14 +19,13 @@ SPDX-FileType: SOURCE
 SPDX-License-Identifier: Apache-2.0
 """
 
-import asyncio
 import os
 import sys
-import time
-
-from tdk.apis.apis import TdkApis
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import asyncio
+import time
 
 from flask import request
 from flask_socketio import SocketIO
@@ -35,6 +34,7 @@ from simulator.ui import create_app
 from simulator.ui.config import config_dict
 from simulator.ui.utils.socket_utils import SocketUtility
 from simulator.utils import constant
+from tdk.apis.apis import TdkApis
 from tdk.helper import someip_helper
 from tdk.helper.transport_configuration import TransportConfiguration
 
